@@ -2,6 +2,8 @@
 
 A simplified physics-based dynamic simulation of the **Basic Oxygen Furnace (BOF) steelmaking process**, developed in C++ and extended with machine learning and a desktop engineering interface.
 
+![BOF Process Model Simulation Dashboard](docs/screenshots/simulation-dashboard.png)
+
 The project was developed to apply undergraduate metallurgy, thermodynamics, mass/energy balance, and programming knowledge to a process-modeling problem relevant to steelmaking.
 
 ## Project Overview
@@ -224,6 +226,18 @@ The application communicates directly with the compiled C++ process model and di
 
 The application can also be packaged as a standalone macOS `.app`.
 
+### Results Table
+
+![BOF Process Model Results Table](docs/screenshots/results-table.png)
+
+The process-history table provides time-resolved simulation output including composition, bath temperature, scrap melting, CO production, and simplified slag formation.
+
+### ML Analysis
+
+![BOF Process Model ML Analysis](docs/screenshots/ml-analysis.png)
+
+The ML analysis view summarizes the surrogate-model configuration and the standardized feature effects learned from the C++ simulator-generated dataset.
+
 ---
 
 ## Project Structure
@@ -233,6 +247,7 @@ bof-process-model/
 │
 ├── include/                 C++ headers
 ├── src/                     C++ implementation
+│
 ├── gui/
 │   └── app.py               Desktop application
 │
@@ -245,6 +260,9 @@ bof-process-model/
 │   └── ml_dataset.csv       Generated simulation dataset
 │
 ├── results/                 Selected simulation plots
+│
+├── docs/
+│   └── screenshots/         Desktop application screenshots
 │
 ├── plot_results.py
 ├── plot_oxygen_scenarios.py
@@ -287,7 +305,7 @@ Single-simulation mode:
 
 ## Running the Desktop Application
 
-Python dependencies include PySide6, PyQtGraph, pandas, joblib and scikit-learn.
+Python dependencies include PySide6, PyQtGraph, pandas, joblib, and scikit-learn.
 
 From the project root:
 
