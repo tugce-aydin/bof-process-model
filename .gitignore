@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# C++ / CMake
+build/
+
+# PyInstaller
+build_pyinstaller/
+dist/
+*.spec
+
+# Generated results
+results/*.csv
+results/ml_temp_*.csv
+ml/results/
+
+# Icon build files
+BOF.iconset/
+
+# VS Code
+.vscode/
+
+# Temporary ML simulation files
+results/ml_temp_*.csv
+
+# Runtime GUI output
+results/gui_simulation.csv
