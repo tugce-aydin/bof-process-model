@@ -31,3 +31,8 @@ results/ml_temp_*.csv
 
 # Runtime GUI output
 results/gui_simulation.csv
+
+
+# App icon files
+BOF.icns
+bof_icon.png
